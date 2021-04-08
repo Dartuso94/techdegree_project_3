@@ -10,6 +10,7 @@
 :focus {
     outline: 2px solid rgba(0, 0, 255, .7);
 }
+
 /*---------- Header -----------*/
 
 header {
@@ -98,9 +99,12 @@ hr {
 
 #contact input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
-    border: 2px solid rgba(0, 0, 255, .5);
+    border: 3px solid rgba(0, 0, 255, .5);
     border-radius: 2.5px;
     box-shadow: 2px 2px 2px gray;
+    transition-property: border;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }
 
 #contact input::placeholder {
@@ -142,6 +146,11 @@ button:hover {
     cursor: pointer;
 }
 
+input:hover {
+    box-shadow: 2px 2px 2px gray;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
 /*---------- Footer ----------*/
 
 footer {
